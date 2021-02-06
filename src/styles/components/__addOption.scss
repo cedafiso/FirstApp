@@ -1,0 +1,41 @@
+
+.addOption{
+    display: flex;
+    padding: $s-size;
+    flex-direction: row;
+}
+
+.addOption-error{
+    color: $off-white;
+    font-style: italic;
+    padding: 0 $m-size;
+    margin: $m-size 0 0 0;
+
+}
+.addOption__input{
+    color: $off-white;
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($dark-blue, 10%);
+    flex-grow: 1;
+    margin-right: $s-size;
+    padding: $s-size;
+}
+
+@media (max-width: 45rem) {
+    
+    .addOption{
+        display: flex;
+        padding: $s-size;
+        flex-direction: column;
+    }
+    .addOption__input{
+        color: $off-white;
+        background: $dark-blue;
+        border: none;
+        border-bottom: 0.3rem solid darken($dark-blue, 10%);
+        flex-grow: 1;
+        margin: 0 0 $s-size 0;
+        padding: $s-size;
+    }
+}
